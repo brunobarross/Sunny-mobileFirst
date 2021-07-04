@@ -604,6 +604,10 @@ li {
 }
 
 
+.content__img img{
+  width: 100%;
+}
+
   .content__text {
     padding: 64px 24px;
     text-align: center;
