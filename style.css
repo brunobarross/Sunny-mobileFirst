@@ -136,7 +136,7 @@ li {
   }
 
   .menu .menu__nav {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     height: calc(50vh - 90px);
     background: var(--White);
@@ -146,10 +146,10 @@ li {
     bottom: 0;
     left: 0;
     right: 0;
-    top: 90px;
+    top: 75px;
     background: var(--White);
     padding-left: 16px;
-    transform: translateX(-110vw);
+    transform: translatex(-110vw);
     transition: 0.3s ease-in-out;
     visibility: hidden;
     border-radius: 8px;
