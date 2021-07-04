@@ -10,7 +10,7 @@ if(tamanhoTela.matches){
     }
 }
 
-  // scroll 
+  /* scroll 
 
 
   window.addEventListener('scroll', reduzMenu);
@@ -26,3 +26,4 @@ if(tamanhoTela.matches){
       }
   }
 
+  */
