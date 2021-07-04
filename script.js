@@ -8,17 +8,9 @@ if(tamanhoTela.matches){
     function openMenu(){
         menu.classList.toggle('active');
     }
-
-
-  
-    
-
 }
 
-
-
   // scroll 
-
 
 
   window.addEventListener('scroll', reduzMenu);
@@ -33,3 +25,4 @@ if(tamanhoTela.matches){
           menu.classList.remove('scroll');
       }
   }
+
