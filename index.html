@@ -9,6 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link
+rel="stylesheet"
+href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="style.css">  
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
@@ -100,24 +104,24 @@
     </section>
     
     <section class="clientes">
-      <div class="container">
+      <div class="container swiper-container">
         <h2>CLIENT TESTIMONIALS</h2>
-        <div class="clientes__wrapper">
-          <div class="clientes__item">
+        <div class="clientes__wrapper swiper-wrapper">
+          <div class="clientes__item swiper-slide">
             <img src="images/image-emily.jpg" class="profile__img">
             <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
             <h3>Emilly R.</h3>
             <span>Marketing Director</span>
             
           </div>
-          <div class="clientes__item">
+          <div class="clientes__item swiper-slide">
             <img src="images/image-thomas.jpg" class="profile__img">
             <p> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
             <h3>Thomas S.</h3>
             <span>Chief Operating Officer</span>
           
           </div>
-          <div class="clientes__item">
+          <div class="clientes__item swiper-slide">
             <img src="images/image-jennie.jpg" class="profile__img">
             <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
             <h3>Jennie F.</h3>
@@ -178,7 +182,45 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Altamiro Bruno</a>
   </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="script.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: '3',
+      spaceBetween: 16,
+      centeredSlides: true,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+            320: {
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 32,
+            },
+            720: {
+                slidesPerView: "auto",
+                centeredSlides: false,
+                spaceBetween: 15,
+            },
+            1024: {
+                slidesPerView: "auto",
+                spaceBetween: 50,
+                centeredSlides: false,
+            },
+            1280: {
+                slidesPerView: "3",
+                spaceBetween: 32,
+                centeredSlides: false,
+            },
+        },
+
+      
+    });
+
+  </script>
 </body>
 </html>
